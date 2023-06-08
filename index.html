@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="C:\Users\paola.bernal\Downloads\GUIA 2_PaolaBernal\Proyecto2\php/slick.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="C:\Users\paola.bernal\Downloads\GUIA 2_PaolaBernal\Proyecto2\php/slick.css">
+  <script src="C:\Users\paola.bernal\Downloads\GUIA 2_PaolaBernal\Proyecto2\php/slick.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    /* Estilos para la ventana emergente */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Estilos para el formulario */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .icon-text-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .social li {
+      list-style-type: none;
+      margin: 10px;
+    }
+
+  .social a {
+    color: #fff;
+    font-size: 24px;
+  }
+
+    .social {
+      display: flex;
+      justify-content: center;
+    }
+
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <p id="saludo"></p>
+  <p id="hora"></p>
+
+  <!-- MAIN WRAPPER -->
+  <div id="wrapper">
+    <!-- BANNER WRAPPER -->
+    <div id="banner-wrapper">
+      <header>
+        <div id="header-inner">
+          <nav>
+            <a href="#" id="menu-icon">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="index.html" class="current">
+                  Inicio
+                </a>
+              </li>
+              <li>
+                <a href="#nosotros">
+                  Nosotros
+                </a>
+              </li>
+              <li>
+                <a href="#portafolio">
+                  Portafolio
+                </a>
+              </li>
+              <li>
+                <a href="#servicios">
+                  Servicios
+                </a>
+              </li>
+              <li>
+                <a href="#contactanos">
+                  Contáctanos
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      </header>
+      <!-- SLIDER -->
+      <div id="slide-wrap">
+        <section class="slider">
+          <ul class="slider1">
+            <li><img src="img/slider/slider1.jpg" alt=""></li>
+            <li><img src="img/slider/slider2.jpg" alt=""></li>
+            <li><img src="img/slider/slider3.jpg" alt=""></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <section class="one-third" id="nosotros">
+      <div class="icon-wrap">
+        <i class="fa fa-desktop"></i>
+      </div>
+      <h3>Servicios</h3>
+      <p>Las mascotas no solo llenan nuestras vidas de amor incondicional y alegría, sino que también nos enseñan la verdadera belleza de la lealtad y la amistad.</p>
+    </section>
+    <section class="one-third">
+      <div class="icon-wrap">
+        <i class="fa fa-pencil-square-o"></i>
+      </div>
+      <h3>Productos</h3>
+      <p>En nuestra tienda en línea de mascotas, encontrarás los mejores productos para el cuidado y bienestar de tu fiel compañero, porque sabemos que ellos son parte importante de tu familia.</p>
+      <a href="img/portafolio/food.jpg" data-lightbox="gallery" data-title="Comida">Comida</a>
+      <a href="img/portafolio/med.jpg" data-lightbox="gallery" data-title="Medicamentos">Medicamentos</a>
+      <a href="img/portafolio/toys.jpg" data-lightbox="gallery" data-title="Juguetes">Juguetes</a>
+
+    </section>
+
+    <section class="one-third">
+      <div class="icon-wrap">
+        <i class="fa fa-file-code-o"></i>
+      </div>
+      <form action="/php/registro.php" method="post">
+      <form id="contact-form" method="POST" action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder "Nombre" required>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mesaje">Mensaje:</label>
+
+        <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+        <input type="submit" value="Enviar">
+
+      </form>
+      <div id="result"></div>
+
+    </section>
+
+    <div class="clearfix-padding"></div>
+    <!-- PORTFOLIO -->
+    <section class="left-col" id="portafolio">
+      <h3>Portafolio</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X7-XClOv-Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <div class="clearfix-padding"></div>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <div class="icon-text-text">
+      <ul class="social">
+        <li>
+          <a href="mailto:contact@contact.com">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://facebook.com/contact">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/contact">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://youtube.com/contact">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>¡Bienvenido!</h2>
+      <p>Gracias por visitarnos, tenemos muchos productos para tu mascota, cierra esta ventana para comenzar a conocerlos.</p>
+    </div>
+  </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <div class="container">
+
+    <div class="gallery">
+      <script>
+        var images = [
+          { src: "images/food.jpg", alt: "Comida" },
+          { src: "images/med.jpg", alt: "Medicamentos" },
+          { src: "images/toys.jpg", alt: "Juguetes" }
+        ];
+
+        var i = 0;
+        while (i < images.length) {
+          document.write('<a href="' + images[i].src + '" data-lightbox="gallery" data-title="' + images[i].alt + '">');
+          document.write('<img src="' + images[i].src + '" alt="' + images[i].alt + '">');
+          document.write('</a>');
+
+    // Agregar una condición para salir del bucle después de mostrar solo las 3 primeras imágenes
+    if (i === 3) {
+      break;
+    }
+
+    i+++;
+
+  }
+
+</script>
+
+    </div>
+  </div>
+</section>
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+    });
+
+    // Obtener el elemento de la hora
+    const horaElement = document.getElementById("hora");
+
+    // Función para obtener la hora actual
+    function obtenerHoraActual() {
+      const fecha = new Date();
+      const horas = fecha.getHours();
+      const minutos = fecha.getMinutes();
+      const segundos = fecha.getSeconds();
+
+      const horaString = `${horas}:${minutos}:${segundos}`;
+      horaElement.innerHTML = horaString;
+    }
+
+    // Función para actualizar la hora cada segundo
+    function actualizarHora() {
+      obtenerHoraActual();
+      setInterval(obtenerHoraActual, 1000);
+    }
+
+    // Iniciar la actualización de la hora
+    actualizarHora();
+
+    $(document).ready(function(){
+      // Obtener la ventana emergente y el botón para cerrarla
+      var modal = document.getElementById("myModal");
+      var closeBtn = document.getElementsByClassName("close")[0];
+
+      // Mostrar la ventana emergente cuando se cargue la página
+      window.onload = function() {
+        modal.style.display = "block";
+      };
+
+      // Cerrar la ventana emergente al hacer clic en el botón de cerrar
+      closeBtn.onclick = function() {
+        modal.style.display = "none";
+      };
+
+      // Cerrar la ventana emergente al hacer clic fuera de ella
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    });
+
+    // Agregar el evento de envío del formulario
+    $("#contact-form").submit(function(event) {
+      // Obtener el valor del campo de correo electrónico
+      var email = $("#email").val();
+
+      // Verificar si el correo electrónico contiene el carácter '@'
+      if (email.includes("@")) {
+        // El correo electrónico es válido, continuar con el envío del formulario
+        // ...
+      } else {
+        // El correo electrónico no contiene el carácter '@', mostrar un mensaje de error
+        alert("Por favor, ingresa un correo electrónico válido.");
+        // Detener el envío del formulario
+        event.preventDefault();
+      }
+    });
+
+    // Agregar el evento de apertura del modal de productos
+    $("#openModal").click(function() {
+      $("#myModal").css("display", "block");
+    });
+
+    $(document).ready(function() {
+      // Inicializar Lightbox
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+    });
+
+      // Esperar a que el documento esté cargado
+    document.addEventListener("DOMContentLoaded", function() {
+      // Inicializar Lightbox
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+    });
+    <script>
+
+
+    $(document).ready(function() {
+    // Obtener el elemento de la hora
+    const horaElement = document.getElementById("hora");
+
+    // Función para obtener la hora actual
+    function obtenerHoraActual() {
+      const fecha = new Date();
+      const horas = fecha.getHours();
+      const minutos = fecha.getMinutes();
+      const segundos = fecha.getSeconds();
+
+      const horaString = `${horas}:${minutos}:${segundos}`;
+      horaElement.innerHTML = horaString;
+    }
+
+    // Función para actualizar la hora cada segundo
+    function actualizarHora() {
+      obtenerHoraActual();
+      setInterval(obtenerHoraActual, 1000);
+    }
+
+    // Iniciar la actualización de la hora
+    actualizarHora();
+
+    // Obtener la ventana emergente y el botón para cerrarla
+    var modal = document.getElementById("myModal");
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Mostrar la ventana emergente cuando se cargue la página
+    window.onload = function() {
+      modal.style.display = "block";
+    };
+
+    // Cerrar la ventana emergente al hacer clic en el botón de cerrar
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+
+    // Cerrar la ventana emergente al hacer clic fuera de ella
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    // Agregar el evento de envío del formulario
+    $("#contact-form").submit(function(event) {
+      event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+      // Obtener los valores ingresados en el formulario
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+
+      // Crear un objeto con los datos del formulario
+      var formData = {
+        name: name,
+        email: email,
+        message: message;
+
+        // Crear un objeto con los datos del formulario
+          var formData = {
+            name: name,
+            email: email,
+            message: message
+          };
+
+          // Enviar los datos del formulario a un archivo PHP utilizando AJAX
+          $.ajax({
+            type: "POST",
+            url: "guardar_datos.php",
+            data: formData,
+            success: function(response) {
+              // Manejar la respuesta del servidor aquí
+              console.log(response);
+              alert("¡Los datos se han guardado correctamente!");
+            },
+            error: function(error) {
+              // Manejar el error aquí
+              console.log(error);
+              alert("Ha ocurrido un error al guardar los datos.");
+            }
+          });
+        });
+      });
+    </script>
+</body>
+</html>

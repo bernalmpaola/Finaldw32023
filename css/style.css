@@ -1,0 +1,204 @@
+/* Código CSS existente ... */
+.big-image-container {
+  text-align: center;
+}
+
+.big-image {
+  width: 70%;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #f7d4e5; /* Fondo rosa */
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+p {
+  color: #524c56;
+  font-size: 160%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #524c56;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+a {
+  color: #524c56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #c3d7df;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#banner-wrapper img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 800px;
+  margin-bottom: -4px;
+}
+
+header {
+  width: 100%;
+  height: 70px; /* Ajusta el valor según tu preferencia */
+  top: 0;
+  left: 0;
+  padding: 10px; /* Ajusta el valor según tu preferencia */
+}
+
+header #logo img {
+  margin: 20px;
+  float: left;
+  width: 50px;
+}
+
+/* NAVIGATION */
+nav {
+  float: right;
+  padding: 25px 20px 0px 0px;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 150%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: #6991AC;
+}
+
+.current {
+  color: #3F5767;
+}
+
+a:hover {
+  color: #a5bdcd;
+}
+
+.one-third {
+  width: 31.5%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s ease-in-out;
+}
+
+.one-third:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.icon-wrap {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background-color: #6991ac;
+  border-radius: 125px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.icon-wrap i {
+  text-align: center;
+  color: #ffffff;
+  font-size: 450%;
+  padding: 20%;
+}
+
+.left-col {
+  float: left;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+
+.sidebar {
+  float: right;
+  margin: 0 auto;
+  width: 32%;
+  height: auto;
+  padding: 1%;
+}
+
+.one-third-padding {
+  /* Código adicional aquí */
+}
+
+footer {
+  background-color: #d49bf7; /* Fondo lila */
+  padding: 10px;
+  text-align: center;
+  color: #524c56;
+  font-size: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-icons {
+  margin-top: 10px;
+  text-align: left; /* Agregado */
+}
+
+.footer-icons a {
+  color: #524c56;
+  margin-right: 8px; /* Modificado a "margin-right" para crear espacio entre los iconos */
+  display: inline-block;
+}
